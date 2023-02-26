@@ -1,5 +1,4 @@
 const express = require('express')
-const poketeam = require('../models/poketeam.js')
 const router = express.Router()
 const PokeTeam = require('../models/poketeam.js')
 //Getting Pokemon Teams

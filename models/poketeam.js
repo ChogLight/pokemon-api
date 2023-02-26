@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const pokeTeamSchema = new mongoose.Schema({
     pokemon_1:{
-        type:String,
+        type: {},
         required: true
     },
     pokemon_2:{
