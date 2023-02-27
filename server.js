@@ -14,5 +14,6 @@ app.use(express.json())
 
 const pokemonTeamRouter = require('./routes/pokemonTeam.js')
 
+
 app.use('/poketeam', pokemonTeamRouter)
 app.listen(3000, () => console.log('Connected to server'))

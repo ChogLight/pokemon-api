@@ -1,28 +1,32 @@
 const mongoose = require('mongoose')
 
 const pokeTeamSchema = new mongoose.Schema({
+    team_name : {
+        type: String,
+        required: true
+    },
     pokemon_1:{
         type: {},
         required: true
     },
     pokemon_2:{
-        type:String,
+        type:{},
         required: true
     },
     pokemon_3:{
-        type:String,
+        type:{},
         required: true
     },
     pokemon_4:{
-        type:String,
+        type:{},
         required: true
     },
     pokemon_5:{
-        type:String,
+        type:{},
         required: true
     },
     pokemon_6:{
-        type:String,
+        type:{},
         required: true
     }
 },
