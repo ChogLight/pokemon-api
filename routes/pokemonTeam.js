@@ -26,7 +26,6 @@ router.get('/:id', async (req, res) => {
 //Creating Pokemon Team
 router.post('/', async (req, res) => {
 
-    res.set('Access-Control-Allow-Origin', '*')
     const pokemonTeam = new PokeTeam({
         pokemon_1:req.body.pokemon_1,
         pokemon_2:req.body.pokemon_2,
