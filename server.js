@@ -10,14 +10,12 @@ const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', () => console.log('connected to database'))
 
-var corsOptions = {
-    origin: 'http://localhost:5173/pokedex',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }
 
+app.use(cors())
 app.use(express.json())
+app.use(express.bodyParser({limit: '50mb'}))
 const pokemonTeamRouter = require('./routes/pokemonTeam.js')
 
 
-app.use('/poketeam', cors(corsOptions), pokemonTeamRouter)
+app.use('/poketeam', pokemonTeamRouter)
 app.listen(3000, () => console.log('Connected to server'))
