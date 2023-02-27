@@ -28,9 +28,13 @@ router.post('/', async (req, res) => {
 
     const pokemonTeam = new PokeTeam({
         team_name:req.body.team_name,
-        pokemon_1:req.body.pokemon_1
+        pokemon_1:req.body.pokemon_1,
+        pokemon_2:req.body.pokemon_2,
+        pokemon_3:req.body.pokemon_3,
+        pokemon_4:req.body.pokemon_4,
+        pokemon_5:req.body.pokemon_5,
+        pokemon_6:req.body.pokemon_6
     })
-
     try {
         const newPokemonTeam = await pokemonTeam.save()
         res.status(201).json(newPokemonTeam)

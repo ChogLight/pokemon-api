@@ -11,18 +11,23 @@ const pokeTeamSchema = new mongoose.Schema({
     },
     pokemon_2:{
         type:{},
+        required: true
     },
     pokemon_3:{
         type:{},
+        required: true
     },
     pokemon_4:{
         type:{},
+        required: true
     },
     pokemon_5:{
         type:{},
+        required: true
     },
     pokemon_6:{
         type:{},
+        required: true
     }
 },
 {
